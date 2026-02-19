@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>守护地球 - 环境保护从我做起</title>
+  <title>Protect Our Planet – Small Actions, Big Impact</title>
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacOSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
-      color: #333;
-      background-color: #f0f7f4;
+      color: #222;
+      background-color: #f5f9f5;
     }
     header {
-      background: linear-gradient(135deg, #1e5799 0%, #2989d8 50%, #207cca 100%);
+      background: linear-gradient(135deg, #0f4c75 0%, #2e86de 50%, #48cae4 100%);
       color: white;
       text-align: center;
-      padding: 80px 20px 60px;
+      padding: 90px 20px 70px;
     }
     h1 {
       margin: 0;
-      font-size: 3.2rem;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     }
     .subtitle {
-      font-size: 1.4rem;
-      margin-top: 12px;
+      font-size: 1.5rem;
+      margin-top: 16px;
       opacity: 0.95;
     }
     .container {
@@ -34,78 +34,86 @@
       padding: 0 20px;
     }
     section {
-      margin: 60px 0;
-      padding: 40px;
+      margin: 70px 0;
+      padding: 45px;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.09);
     }
     h2 {
-      color: #2e7d32;
-      border-bottom: 3px solid #a5d6a7;
-      padding-bottom: 12px;
-      margin-bottom: 28px;
-    }
-    .tips-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 28px;
-    }
-    .tip-card {
-      background: #f1f8e9;
-      border-radius: 10px;
-      padding: 24px;
-      border-left: 5px solid #8bc34a;
-      transition: all 0.25s;
-    }
-    .tip-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-    }
-    .tip-card h3 {
-      margin-top: 0;
-      color: #33691e;
+      color: #1b5e20;
+      border-bottom: 4px solid #a5d6a7;
+      padding-bottom: 14px;
+      margin-bottom: 32px;
     }
     .stats {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 40px;
-      margin: 40px 0;
+      gap: 50px;
+      margin: 50px 0;
       text-align: center;
     }
     .stat-item {
       background: #e8f5e9;
-      padding: 24px 36px;
-      border-radius: 16px;
-      min-width: 180px;
+      padding: 30px 40px;
+      border-radius: 20px;
+      min-width: 200px;
     }
     .number {
-      font-size: 2.8rem;
+      font-size: 3.2rem;
       font-weight: bold;
       color: #2e7d32;
+    }
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .tip-card {
+      background: #f1f8e9;
+      border-radius: 12px;
+      padding: 28px;
+      border-left: 6px solid #8bc34a;
+      transition: all 0.3s ease;
+    }
+    .tip-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+    .tip-card h3 {
+      margin-top: 0;
+      color: #33691e;
+    }
+    .action-btn {
+      display: inline-block;
+      background: #43a047;
+      color: white;
+      padding: 18px 48px;
+      font-size: 1.3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      margin-top: 40px;
+      transition: all 0.3s;
+    }
+    .action-btn:hover {
+      background: #2e7d32;
+      transform: scale(1.08);
     }
     footer {
       background: #1b5e20;
       color: white;
       text-align: center;
-      padding: 40px 20px;
-      margin-top: 60px;
+      padding: 50px 20px;
+      margin-top: 80px;
     }
-    .action-btn {
-      display: inline-block;
-      background: #4caf50;
-      color: white;
-      padding: 16px 36px;
-      font-size: 1.2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      margin-top: 30px;
-      transition: all 0.3s;
-    }
-    .action-btn:hover {
-      background: #388e3c;
-      transform: scale(1.06);
+    img.hero {
+      width: 100%;
+      max-width: 620px;
+      border-radius: 16px;
+      margin: 35px auto;
+      display: block;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
     }
   </style>
 </head>
@@ -113,70 +121,85 @@
 
   <header>
     <div class="container">
-      <h1>守护地球，从现在开始</h1>
-      <p class="subtitle">环境保护不是别人的事，而是我们每个人的责任</p>
+      <h1>Protect Our Planet</h1>
+      <p class="subtitle">The Earth is what we all have in common — let's take care of it together.</p>
     </div>
   </header>
 
   <div class="container">
 
-    <section>
-      <h2>为什么我们必须行动？</h2>
-      <div class="stats">
-        <div class="stat-item">
-          <div class="number">1.5℃</div>
-          <p>全球气温已上升约</p>
-        </div>
-        <div class="stat-item">
-          <div class="number">100万</div>
-          <p>物种面临灭绝风险</p>
-        </div>
-        <div class="stat-item">
-          <div class="number">800万吨</div>
-          <p>每年进入海洋的塑料</p>
-        </div>
-      </div>
+    <section style="text-align:center;">
+      <img src="https://thumbs.dreamstime.com/b/illustration-planet-earth-embraced-green-leaves-environmental-protection-nature-conservation-vibrant-hues-leaf-motifs-400056399.jpg" alt="Planet Earth surrounded by green leaves" class="hero">
     </section>
 
     <section>
-      <h2>日常能做的小改变（很大意义）</h2>
+      <h2>Why We Must Act Now</h2>
+      <div class="stats">
+        <div class="stat-item">
+          <div class="number">1.5 °C</div>
+          <p>Global temperature rise so far — we are approaching dangerous thresholds</p>
+        </div>
+        <div class="stat-item">
+          <div class="number">1 million</div>
+          <p>Species at risk of extinction</p>
+        </div>
+        <div class="stat-item">
+          <div class="number">8 million tons</div>
+          <p>Of plastic enter our oceans every year</p>
+        </div>
+      </div>
+      <p style="text-align:center; font-style:italic; margin-top:40px;">
+        Every small choice matters when billions of people make it.
+      </p>
+    </section>
+
+    <section>
+      <h2>Simple Daily Actions That Make a Real Difference</h2>
       <div class="tips-grid">
         <div class="tip-card">
-          <h3>减少一次性塑料</h3>
-          <p>自带购物袋、水杯、餐具，拒绝吸管和塑料袋。</p>
+          <h3>Ditch Single-Use Plastics</h3>
+          <p>Carry reusable bags, bottles, coffee cups, straws, and containers. Refuse plastic cutlery and bags whenever possible.</p>
         </div>
         <div class="tip-card">
-          <h3>节约用电用水</h3>
-          <p>随手关灯、不必要时关闭电器插头、淋浴时间控制在5分钟内。</p>
+          <h3>Save Energy & Water</h3>
+          <p>Turn off lights, unplug devices, take shorter showers, fix leaks — small habits add up fast.</p>
         </div>
         <div class="tip-card">
-          <h3>绿色出行</h3>
-          <p>步行、骑行、公共交通，少开一天车 ≈ 少排约4kg二氧化碳。</p>
+          <h3>Choose Sustainable Transport</h3>
+          <p>Walk, bike, use public transit, or carpool. One less car trip per day = ~4 kg less CO₂.</p>
         </div>
         <div class="tip-card">
-          <h3>垃圾分类不乱扔</h3>
-          <p>可回收物、有害垃圾、厨余、其他垃圾正确分类。</p>
+          <h3>Sort Waste & Recycle Properly</h3>
+          <p>Separate recyclables, compost food scraps, avoid landfill when you can.</p>
         </div>
         <div class="tip-card">
-          <h3>少吃肉、多植物</h3>
-          <p>每周一天“无肉日”能减少大量温室气体排放。</p>
+          <h3>Eat More Plants, Less Meat</h3>
+          <p>Try “Meatless Monday” or reduce portion sizes — livestock farming is a major source of emissions.</p>
         </div>
         <div class="tip-card">
-          <h3>植树 & 护绿</h3>
-          <p>参与植树活动，阳台种绿植，保护身边的每一棵树。</p>
+          <h3>Plant Trees & Support Green Spaces</h3>
+          <p>Join local tree-planting events, grow plants at home, or donate to reforestation projects.</p>
         </div>
       </div>
 
-      <p style="text-align:center; margin-top:50px;">
-        <a href="#" class="action-btn">今天开始，我愿意改变的一件事是 →</a>
+      <p style="text-align:center; margin:60px 0;">
+        <a href="#" class="action-btn">Today I choose to… Start one small change →</a>
+      </p>
+    </section>
+
+    <section style="text-align:center;">
+      <h2>Together We Can Make a Difference</h2>
+      <img src="https://www.green.earth/hubfs/Happy%20friends%20gardening%20for%20the%20community%20on%20a%20sunny%20day.jpeg" alt="Group of people planting trees together" style="width:100%; max-width:720px; border-radius:16px; box-shadow:0 10px 40px rgba(0,0,0,0.15);">
+      <p style="margin-top:30px; font-size:1.2rem;">
+        The future is not something we enter. The future is something we create.
       </p>
     </section>
 
   </div>
 
   <footer>
-    <p>地球不是我们从祖先那里继承来的，而是我们向子孙借来的</p>
-    <p style="margin-top:20px; opacity:0.9;">2026 © 为下一代留一片蓝天净土</p>
+    <p>“We do not inherit the Earth from our ancestors; we borrow it from our children.”</p>
+    <p style="margin-top:24px; opacity:0.9;">© 2026 – For a healthier planet for everyone</p>
   </footer>
 
 </body>
